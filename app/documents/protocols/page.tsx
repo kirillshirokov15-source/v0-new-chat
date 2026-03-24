@@ -13,21 +13,25 @@ export default function ProtocolsPage() {
       title: "Протокол заседания Правления №62",
       date: "02.04.2025",
       type: "Заседание Правления",
+      file: "/documents/povestka-14-09-2025.pdf",          // ← имя файла который загрузил
     },
     {
       title: "Протокол общего собрания членов ТСН",
       date: "24.03.2025",
       type: "Общее собрание",
+      file: "/documents/povestka-21-09-2025.pdf",
     },
     {
       title: "Протокол заседания Правления №61",
       date: "15.02.2025",
       type: "Заседание Правления",
+      file: "/documents/povestka-22-09-2025.pdf",
     },
     {
       title: "Протокол заседания Правления №60",
       date: "28.01.2025",
       type: "Заседание Правления",
+      file: "/documents/pravila.pdf",
     },
   ]
 
@@ -37,11 +41,9 @@ export default function ProtocolsPage() {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Протоколы</h1>
           <div className="w-20 h-1 bg-primary mb-8"></div>
-
           <p className="text-lg text-muted-foreground mb-12">
             Протоколы заседаний Правления и общих собраний ТСН «КП Аксаково»
           </p>
-
           <div className="space-y-4">
             {protocols.map((protocol, index) => (
               <Card key={index} className="hover:shadow-md transition-shadow">
@@ -62,10 +64,13 @@ export default function ProtocolsPage() {
                         </div>
                       </div>
                     </div>
-                    <Button variant="outline" size="sm" className="flex-shrink-0 bg-transparent">
-                      <Download className="h-4 w-4 mr-2" />
-                      Скачать
-                    </Button>
+                    {/* ВОТ ИСПРАВЛЕНИЕ — кнопка теперь является ссылкой */}
+                    <a href={protocol.file} download>
+                      <Button variant="outline" size="sm" className="flex-shrink-0 bg-transparent">
+                        <Download className="h-4 w-4 mr-2" />
+                        Скачать
+                      </Button>
+                    </a>
                   </div>
                 </CardHeader>
               </Card>

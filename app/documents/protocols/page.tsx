@@ -19,7 +19,8 @@ export default function ProtocolsPage() {
       title: "Протокол общего собрания членов ТСН",
       date: "24.03.2025",
       type: "Общее собрание",
-      file: "/documents/povestka-21-09-2025.pdf",
+      file: "/documents/Protokol-obshego-sobraniya-16.03.2025.pdf",
+
     },
     {
       title: "Протокол заседания Правления №61",
@@ -31,7 +32,7 @@ export default function ProtocolsPage() {
       title: "Протокол заседания Правления №60",
       date: "28.01.2025",
       type: "Заседание Правления",
-      file: "/documents/pravila.pdf",
+      file: "/documents/povestka-21-09-2025.pdf",
     },
   ]
 

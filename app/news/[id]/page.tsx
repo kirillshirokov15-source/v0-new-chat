@@ -15,6 +15,13 @@ const newsData: Record<
     pdfUrl?: string
   }
 > = {
+   "800": {
+    id: "800",
+    title: "Уведомление о проведении общего собрания",
+    date: "24.03.2026",
+    content: "",
+    pdfUrl: "/documents/uvedomlenie-obshhego-sobraniya-2025.pdf",
+  },
   "758": {
     id: "758",
     title: "Повестка заседания Правления ТСН «КП Аксаково» 14 сентября 2025 года",

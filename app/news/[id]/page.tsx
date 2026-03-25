@@ -24,7 +24,7 @@ const newsData: Record<
     content: "",
     pdfUrl: "/documents/uvedomlenie-obshhego-sobraniya-2025.pdf",
     pdfUrl2: "/documents/dop_doc_25_03.pdf",
-    pdfLabel2: "Дополнительный документ",
+    pdfLabel2: "Смета доходов и расходов Товарищества",
   },
   "758": {
     id: "758",

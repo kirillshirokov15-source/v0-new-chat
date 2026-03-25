@@ -13,7 +13,7 @@ export default function ProtocolsPage() {
       title: "Протокол заседания Правления №62",
       date: "02.04.2025",
       type: "Заседание Правления",
-      file: "/documents/povestka-14-09-2025.pdf",          // ← имя файла который загрузил
+      file: "/documents/Protokol-zasedania-pravlenia-№-62.pdf",          // ← имя файла который загрузил
     },
     {
       title: "Протокол общего собрания членов ТСН",
@@ -26,13 +26,13 @@ export default function ProtocolsPage() {
       title: "Протокол заседания Правления №61",
       date: "15.02.2025",
       type: "Заседание Правления",
-      file: "/documents/povestka-22-09-2025.pdf",
+      file: "/documents/Protokol-zasedania-pravlenia-№-61.pd",
     },
     {
       title: "Протокол заседания Правления №60",
       date: "28.01.2025",
       type: "Заседание Правления",
-      file: "/documents/povestka-21-09-2025.pdf",
+      file: "/documents/Protokol-zasedania-pravlenia-№-60.pd",
     },
   ]
 

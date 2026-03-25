@@ -13,6 +13,7 @@ export default function ReportsPage() {
       title: "Финансовый отчет за 2024 год",
       date: "01.03.2025",
       type: "Годовой отчет",
+      file: "/documents/Otchet-revizora-za-2024-god.pdf",
     },
     {
       title: "Отчет о расходах за 4 квартал 2024",

@@ -26,13 +26,13 @@ export default function ProtocolsPage() {
       title: "Протокол заседания Правления №61",
       date: "15.02.2025",
       type: "Заседание Правления",
-      file: "/documents/Protokol61.pd",
+      file: "/documents/Protokol61.pdf",
     },
     {
       title: "Протокол заседания Правления №60",
       date: "28.01.2025",
       type: "Заседание Правления",
-      file: "/documents/Protokol60.pd",
+      file: "/documents/Protokol60.pdf",
     },
   ]
 

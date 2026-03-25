@@ -21,6 +21,7 @@ const newsData: Record<
     date: "24.03.2026",
     content: "",
     pdfUrl: "/documents/uvedomlenie-obshhego-sobraniya-2025.pdf",
+    pdfUrl: "/documents/dop_doc_25_03",
   },
   "758": {
     id: "758",

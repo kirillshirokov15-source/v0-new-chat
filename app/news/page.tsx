@@ -17,6 +17,7 @@ export default function NewsPage() {
       excerpt:
         "Уважаемые жители! Уведомляем вас о проведении общего собрания членов ТСН «КП Аксаково». Для ознакомления с повесткой скачайте документ.",
       file: "/documents/uvedomlenie-obshhego-sobraniya-2025.pdf",
+      file: "/documents/dop_doc_25_03",
     },
     {
       id: "758",

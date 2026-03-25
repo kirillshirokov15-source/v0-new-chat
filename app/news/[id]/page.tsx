@@ -13,6 +13,8 @@ const newsData: Record<
     date: string
     content: string
     pdfUrl?: string
+    pdfUrl2?: string
+    pdfLabel2?: string
   }
 > = {
    "800": {
@@ -21,6 +23,8 @@ const newsData: Record<
     date: "24.03.2026",
     content: "",
     pdfUrl: "/documents/uvedomlenie-obshhego-sobraniya-2025.pdf",
+    pdfUrl2: "/documents/dop_doc_25_03.pdf",
+    pdfLabel2: "Дополнительный документ",
   },
   "758": {
     id: "758",
@@ -293,7 +297,27 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ id:
                       </a>
                     </Button>
                   </div>
-
+                  
+            {news.pdfUrl2 && (
+                    <div className="flex items-center gap-4 p-6 bg-muted/50 rounded-lg w-full">
+                      <div className="p-4 bg-red-100 rounded-lg">
+                        <FileText className="h-12 w-12 text-red-600" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="font-semibold text-lg mb-1">
+                          {news.pdfLabel2 ?? "Дополнительный документ"}
+                        </h3>
+                        <p className="text-muted-foreground text-sm">{news.title}</p>
+                      </div>
+                      <Button asChild className="bg-primary hover:bg-primary/90">
+                        <a href={news.pdfUrl2} target="_blank" rel="noopener noreferrer">
+                          <Download className="h-4 w-4 mr-2" />
+                          Скачать PDF
+                        </a>
+                      </Button>
+                    </div>
+                  )}
+                  
                   <div className="w-full">
                     <iframe src={news.pdfUrl} className="w-full h-[600px] border rounded-lg" title={news.title} />
                   </div>

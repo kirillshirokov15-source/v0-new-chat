@@ -10,6 +10,12 @@ export const metadata = {
 export default function ProtocolsPage() {
   const protocols = [
     {
+      title: "Протокол общего собрания членов ТСН",
+      date: "11.04.2026",
+      type: "Общее собрание",
+      file: "/documents/Protokol-obshego-sobraniya-20.04.2026.pdf",
+    },
+    {
       title: "Протокол заседания Правления №62",
       date: "02.04.2025",
       type: "Заседание Правления",
